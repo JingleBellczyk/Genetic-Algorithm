@@ -1,0 +1,17 @@
+# ninja log v5
+98	4533	7016424705159912	CMakeFiles/MiniprojektTEP.dir/CGeneticAlgorithm/CGeneticAlgorithm.cpp.obj	c6ff6b62a6c409ab
+4535	6523	7016424726581602	MiniprojektTEP.exe	cbf37a6e15dc669f
+71	4181	7016424702312224	CMakeFiles/MiniprojektTEP.dir/main.cpp.obj	abc5faa8185d04d6
+52	3439	7016424695623350	CMakeFiles/MiniprojektTEP.dir/CProblem/CProblem.cpp.obj	281fbab55ffd133e
+119	1331	7016424674138925	CMakeFiles/MiniprojektTEP.dir/CSolution/CSolution.cpp.obj	c17925aaa0975661
+182	4236	7016424702632265	CMakeFiles/MiniprojektTEP.dir/CRandomNumberGenerator/CRandomNumberGenerator.cpp.obj	4c4e284dc97ce120
+1334	2830	7016424689300372	CMakeFiles/MiniprojektTEP.dir/CItems/CItems.cpp.obj	d57e88b84a83585
+25	4323	7016424704743126	CMakeFiles/MiniprojektTEP.dir/CIndividual/CIndividual.cpp.obj	69b846e2f50f1177
+184	898	7016426291330190	CMakeFiles/MiniprojektTEP.dir/CItems/CItems.cpp.obj	cb39027ddbd7533f
+901	1741	7016426300035576	CMakeFiles/MiniprojektTEP.dir/CSolution/CSolution.cpp.obj	665da922527bd2ee
+18	2653	7016426308249032	CMakeFiles/MiniprojektTEP.dir/CProblem/CProblem.cpp.obj	7013bc09303463a9
+39	3069	7016426313348522	CMakeFiles/MiniprojektTEP.dir/main.cpp.obj	39bd7810c795acf5
+158	3078	7016426313408549	CMakeFiles/MiniprojektTEP.dir/CRandomNumberGenerator/CRandomNumberGenerator.cpp.obj	4121f524561b0643
+135	3115	7016426313969977	CMakeFiles/MiniprojektTEP.dir/CGeneticAlgorithm/CGeneticAlgorithm.cpp.obj	7e06f2c8d35d2643
+73	3226	7016426315094598	CMakeFiles/MiniprojektTEP.dir/CIndividual/CIndividual.cpp.obj	2e4ff8014e514fc5
+3227	3614	7016426318848940	MiniprojektTEP.exe	cbf37a6e15dc669f

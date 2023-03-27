@@ -1,0 +1,3 @@
+C:/Users/agabe/CLionProjects/GeneticAlgorithmProject/cmake-build-debug/CMakeFiles/MiniprojektTEP.dir
+C:/Users/agabe/CLionProjects/GeneticAlgorithmProject/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/agabe/CLionProjects/GeneticAlgorithmProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
