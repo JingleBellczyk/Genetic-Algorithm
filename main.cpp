@@ -48,8 +48,7 @@ void test(std::string sFileName, int iPopulationSize, double dCrosProb, double d
 }
 
 int main() {
-    std::string sFileName = ".\\CProblem\\InstancjaProblemu.txt";
-
+    std::string sFileName = ".\\CProblem\\ProblemInstance.txt";
     testWithGivenSeed(sFileName, 100, 0.6, 0.1, 100, 1104690266);
     std::cout << "\n";
     test(sFileName, 100, 0.6, 0.1, 100);
