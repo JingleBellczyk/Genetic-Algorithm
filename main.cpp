@@ -6,6 +6,8 @@
 void testWithGivenSeed(std::string sFileName, int iPopulationSize, double dCrosProb, double dMutProb,
                        int iIterNum, unsigned long ulSeed) {
 
+    std::cout <<"Seed: "<< ulSeed << "\n";
+
     CProblem *pcKnapsackProblem = new CKnapsackProblem;
     if (pcKnapsackProblem->bReadInstanceFromFile(sFileName)) {
         CRandomNumberGenerator *pcRanNumGen = new CRandomNumberGenerator(ulSeed);
@@ -15,6 +17,7 @@ void testWithGivenSeed(std::string sFileName, int iPopulationSize, double dCrosP
 
         pcGenAlg->vStartGeneticAlgorithm();
 
+        std::cout << "Solution | Adaptation\n";
         for (int i = 0; i < pcKnapsackProblem->iGetISize(); i++) {
             std::cout << (pcGenAlg->piGetBestSolution()->dGetBestGenotype())[i];
         }
@@ -26,17 +29,19 @@ void testWithGivenSeed(std::string sFileName, int iPopulationSize, double dCrosP
 }
 
 void test(std::string sFileName, int iPopulationSize, double dCrosProb, double dMutProb, int iIterNum) {
+    std::cout <<"----------------------\n";
 
     CProblem *pcKnapsackProblem = new CKnapsackProblem;
     if (pcKnapsackProblem->bReadInstanceFromFile(sFileName)) {
         CRandomNumberGenerator *pcRanNumGen = new CRandomNumberGenerator();
-        std::cout << pcRanNumGen->getSeed() << "\n";
+        std::cout <<"Seed: "<< pcRanNumGen->getSeed() << "\n";
 
         CGeneticAlgorithm *pcGenAlg = new CGeneticAlgorithm(pcKnapsackProblem, iPopulationSize,
                                                             dCrosProb, dMutProb, iIterNum, pcRanNumGen);
 
         pcGenAlg->vStartGeneticAlgorithm();
 
+        std::cout << "Solution | Adaptation\n";
         for (int i = 0; i < pcKnapsackProblem->iGetISize(); i++) {
             std::cout << (pcGenAlg->piGetBestSolution()->dGetBestGenotype())[i];
         }

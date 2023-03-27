@@ -84,9 +84,16 @@ void CGeneticAlgorithm::vCalculateAdaptations() {
         pcCurrentPopulation[i].vCountAdapatation(pcProblem);
     }
 }
-
+//dodane
 CIndividual *CGeneticAlgorithm::piChooseRandomInd() {
-    return &pcCurrentPopulation[pcRandomNumberGenerator->generateNumberInt(0, iPopulationSize - 1)];
+    int iFirstCandidate = pcRandomNumberGenerator->generateNumberInt(0, iPopulationSize - 1);
+    int iSecondCandidate = pcRandomNumberGenerator->generateNumberInt(0, iPopulationSize - 1);
+
+    if(pcCurrentPopulation[iFirstCandidate].dGetAdaptation() > pcCurrentPopulation[iSecondCandidate].dGetAdaptation()){
+        return &pcCurrentPopulation[iFirstCandidate];
+    }
+    return &pcCurrentPopulation[iSecondCandidate];
+
 }
 
 void CGeneticAlgorithm::crossPopulation() {

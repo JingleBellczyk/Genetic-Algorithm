@@ -48,14 +48,17 @@ void CIndividual::vPrintGen(int iSize) {
     std::cout << "\n";
 }
 
-//void CIndividual::vMutateIndividual(double dMutationProbability, int iGenotypeSize,
-//                                    CRandomNumberGenerator *piRandomNumberGenerator) {
-//    for (int i = 0; i < iGenotypeSize; i++) {
-//        if (piRandomNumberGenerator->generateNumberDouble(0.0, 1.0) < dMutationProbability) {
-//            piGenotype[i] = (piGenotype[i] + 1) % 2;
-//        }
-//    }
-//};
+/* different way to mutate */
+/*
+void CIndividual::vMutateIndividual(double dMutationProbability, int iGenotypeSize,
+                                    CRandomNumberGenerator *piRandomNumberGenerator) {
+    for (int i = 0; i < iGenotypeSize; i++) {
+        if (piRandomNumberGenerator->generateNumberDouble(0.0, 1.0) < dMutationProbability) {
+            piGenotype[i] = (piGenotype[i] + 1) % 2;
+        }
+    }
+};
+ */
 
 void CIndividual::vMutateIndividual(double dMutationProbability, int iGenotypeSize,
                                     CRandomNumberGenerator *piRandomNumberGenerator, CIndividual* pcOther) {
